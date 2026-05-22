@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Explore Sibiu Travel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      margin:0;
+      font-family:'Poppins', sans-serif;
+      background:#f4f7fb;
+    }
+
+    /* HEADER */
+
+    header{
+      background:linear-gradient(135deg,#2c3e50,#3498db);
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .lang-switch{
+      margin-top:15px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .lang{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      margin:0 10px;
+      cursor:pointer;
+      padding:5px 10px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .lang:hover{
+      background:rgba(255,255,255,0.2);
+    }
+
+    .lang.active{
+      font-weight:700;
+      text-decoration:underline;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      text-align:center;
+      background:white;
+      padding:15px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    nav a{
+      margin:0 12px;
+      text-decoration:none;
+      color:#2c3e50;
+      font-weight:600;
+    }
+
+    .contact-btn{
+      background:#e74c3c;
+      color:white;
+      padding:8px 14px;
+      border-radius:20px;
+    }
+
+    /* CONTENT */
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    .contact-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:25px;
+    }
+
+    .contact-card{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .contact-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .contact-card h2{
+      margin-top:0;
+      color:#3498db;
+      margin-bottom:20px;
+    }
+
+    .contact-card p{
+      color:#333;
+      line-height:1.8;
+    }
+
+    /* TESLA IMAGES */
+
+    .car-gallery{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:15px;
+      margin-top:20px;
+    }
+
+    .car-gallery img{
+      width:100%;
+      border-radius:15px;
+      height:220px;
+      object-fit:cover;
+      box-shadow:0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    /* LEGAL BOX */
+
+    .legal-box{
+      background:#eef6ff;
+      border-left:5px solid #3498db;
+      padding:15px;
+      border-radius:12px;
+      margin-top:15px;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#2c3e50;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+
+    @media(max-width:600px){
+
+      header h1{
+        font-size:28px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>Explore Sibiu Travel</h1>
+
+  <p>
+    📞 0740 000 000 | ✉️ contact@exploresibiu.ro
+  </p>
+
+  <div class="lang-switch">
+
+    <span class="lang active">
+      <img src="https://flagcdn.com/w20/ro.png"> RO
+    </span>
+
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/gb.png"> EN
+    </span>
+
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/fr.png"> FR
+    </span>
+
+  </div>
+
+</header>
+
+<nav>
+
+  <div class="nav-right">
+   <a href="airport.html" class="contact-btn">Airport Pick-up</a>
+    <a href="index.html">Acasă</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </div>
+
+</nav>
+
+<div class="container">
+
+  <div class="contact-grid">
+
+    <!-- CONTACT -->
+
+    <div class="contact-card">
+
+      <h2>📞 Contact</h2>
+
+      <p><strong>Telefon:</strong> 0740 000 000</p>
+
+      <p><strong>Email:</strong> contact@exploresibiu.ro</p>
+
+      <p>
+        Suntem disponibili zilnic pentru rezervări,
+        informații și suport privind excursiile.
+      </p>
+
+      <p>
+        Program: 08:00 - 22:00
+      </p>
+
+    </div>
+
+    <!-- TESLA -->
+
+    <div class="contact-card">
+
+      <h2>🚘 Mașina excursiei</h2>
+
+      <p>
+        Excursiile sunt realizate cu un 
+        <strong>Tesla Model 3</strong>,
+        oferind confort premium, siguranță și o experiență modernă de călătorie.
+      </p>
+
+      <div class="car-gallery">
+
+        <img src="https://images.unsplash.com/photo-1560958089-b8a1929cea89?q=80&w=1200&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?q=80&w=1200&auto=format&fit=crop">
+
+        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop">
+
+      </div>
+
+    </div>
+
+    <!-- LEGAL -->
+
+    <div class="contact-card">
+
+      <h2>📄 Conformitate legală</h2>
+
+      <div class="legal-box">
+
+        <p>
+          ✔️ Activitate desfășurată conform legislației în vigoare.
+        </p>
+
+        <p>
+          ✔️ Transport realizat în condiții de siguranță și confort.
+        </p>
+
+        <p>
+          ✔️ Respectarea normelor privind protecția consumatorului.
+        </p>
+
+        <p>
+          ✔️ Datele clienților sunt protejate și confidențiale.
+        </p>
+
+        <p>
+          ✔️ Excursiile se desfășoară pe bază de rezervare.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<footer>
+
+  <p>
+    &copy; 2026 Explore Sibiu Travel
+  </p>
+
+</footer>
+
+</body>
+</html>

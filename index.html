@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Sibiu Travel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; margin: 0; background:#f4f7fb; }
+
+    header { 
+      background: linear-gradient(135deg,#2c3e50,#3498db);
+      color:white; 
+      padding:40px 20px; 
+      text-align:center; 
+    }
+
+    header h1 { font-size: 42px; margin-bottom:10px; }
+
+    .lang-switch {
+      margin-top:15px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .lang {
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      margin:0 10px;
+      cursor:pointer;
+      padding:5px 10px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .lang:hover {
+      background:rgba(255,255,255,0.2);
+    }
+
+    .lang.active {
+      color:#ffffff;
+      font-weight:700;
+      text-decoration:underline;
+    }
+
+    nav { 
+      text-align:center; 
+      background:white; 
+      padding:15px; 
+      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top:0;
+      z-index:10;
+    }
+
+    nav a { 
+      margin:0 12px; 
+      text-decoration:none; 
+      color:#2c3e50;
+      font-weight:600;
+    }
+
+    .contact-btn {
+      background:#e74c3c;
+      color:white;
+      padding:8px 14px;
+      border-radius:20px;
+    }
+
+    .container { padding:40px 20px; max-width:1100px; margin:auto; }
+
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap:20px;
+    }
+
+    .card { 
+      background:white; 
+      border-radius:15px; 
+      overflow:hidden;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .card img { width:100%; height:180px; object-fit:cover; }
+
+    .card-content { padding:15px; }
+
+    .price {
+      display:inline-block;
+      margin-top:10px;
+      padding:6px 12px;
+      background:#27ae60;
+      color:white;
+      border-radius:20px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .btn { 
+      display:inline-block; 
+      margin-top:10px; 
+      padding:10px 15px; 
+      background:#3498db; 
+      color:white; 
+      text-decoration:none; 
+      border-radius:8px; 
+    }
+
+   .reviews, .contact { 
+      background:white; 
+      padding:30px; 
+      border-radius:15px;
+      margin-top:40px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    input, textarea {
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border-radius:8px;
+      border:1px solid #ccc;
+    }
+
+    footer { 
+      background:#2c3e50; 
+      color:white; 
+      text-align:center; 
+      padding:20px; 
+      margin-top:40px;
+    }
+
+    @media(max-width:600px){
+      header h1 { font-size:28px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Explore Sibiu Travel</h1>
+  <p>📞 0740 000 000 | ✉️ contact@exploresibiu.ro</p>
+  
+  <div class="lang-switch">
+    <span class="lang active">
+      <img src="https://flagcdn.com/w20/ro.png" alt="RO"> RO
+    </span>
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/gb.png" alt="EN"> EN
+    </span>
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/fr.png" alt="FR"> FR
+    </span>
+  </div>
+</header>
+
+<nav>
+   <div class="nav-right">
+   <a href="airport.html" class="contact-btn">Airport Pick-up</a>
+    <a href="index.html">Acasă</a>
+    <a href="#excursii">Excursii</a>
+    <a href="#recenzii">Recenzii</a>
+    <a href="contact.html" class="contact-btn">Contact</a>
+  </div>
+</nav>
+
+<div class="container" id="excursii">
+  <h2>Excursiile noastre</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400">
+      <div class="card-content">
+        <h3>Transfăgărășan</h3>
+        <p>Unul dintre cele mai spectaculoase drumuri din lume.</p>
+        <div class="price">De la 100 RON</div><br>
+        <a href="excursie1.html" class="btn">Detalii</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400">
+      <div class="card-content">
+        <h3>Castelul Bran</h3>
+        <p>Legendara destinație a lui Dracula.</p>
+        <div class="price">De la 100 RON</div><br>
+        <a href="excursie2.html" class="btn">Detalii</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400">
+      <div class="card-content">
+        <h3>Sighișoara</h3>
+        <p>Cetate medievală autentică.</p>
+        <div class="price">De la 100 RON</div><br>
+        <a href="excursie3.html" class="btn">Detalii</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/600x400">
+      <div class="card-content">
+        <h3>Munții Făgăraș</h3>
+        <p>Drumeții și natură spectaculoasă.</p>
+        <div class="price">De la 100 RON</div><br>
+        <a href="excursie4.html" class="btn">Detalii</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="reviews" id="recenzii">
+    <h2>Recenzii</h2>
+    <p>⭐⭐⭐⭐⭐ Experiență excelentă!</p>
+    <p>⭐⭐⭐⭐⭐ Organizare impecabilă.</p>
+  </div>
+
+  <div class="contact" id="contact">
+    <h2>Contact</h2>
+    <p>📞 0740 000 000</p>
+    <p>✉️ contact@exploresibiu.ro</p>
+    <p>📍 Sibiu, România</p>
+  </div>
+
+</div>
+
+<footer>
+  <p>&copy; 2026 Explore Sibiu Travel</p>
+</footer>
+
+</body>
+</html>

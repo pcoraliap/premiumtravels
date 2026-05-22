@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airport Pick Up - Explore Sibiu Travel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    body{
+      margin:0;
+      font-family:'Poppins', sans-serif;
+      background:#f4f7fb;
+    }
+
+    /* HEADER */
+
+    header{
+      background:linear-gradient(135deg,#2c3e50,#3498db);
+      color:white;
+      padding:40px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:42px;
+      margin-bottom:10px;
+    }
+
+    .lang-switch{
+      margin-top:15px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+
+    .lang{
+      display:inline-flex;
+      align-items:center;
+      gap:5px;
+      margin:0 10px;
+      cursor:pointer;
+      padding:5px 10px;
+      border-radius:20px;
+      transition:0.3s;
+    }
+
+    .lang:hover{
+      background:rgba(255,255,255,0.2);
+    }
+
+    .lang.active{
+      font-weight:700;
+      text-decoration:underline;
+    }
+
+    /* NAVBAR */
+
+    nav{
+      text-align:center;
+      background:white;
+      padding:15px;
+      box-shadow:0 2px 8px rgba(0,0,0,0.05);
+      position:sticky;
+      top:0;
+      z-index:10;
+    }
+
+    nav a{
+      margin:0 12px;
+      text-decoration:none;
+      color:#2c3e50;
+      font-weight:600;
+    }
+
+    .contact-btn{
+      background:#e74c3c;
+      color:white;
+      padding:8px 14px;
+      border-radius:20px;
+    }
+
+    /* CONTAINER */
+
+    .container{
+      max-width:1200px;
+      margin:auto;
+      padding:40px 20px;
+    }
+
+    /* TITLU */
+
+    .airport-title{
+      background:linear-gradient(135deg,#6ec6ff,#1e88e5);
+      color:#000;
+      padding:30px;
+      border-radius:20px;
+      text-align:center;
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+      animation:pulse 2s infinite;
+      margin-bottom:40px;
+    }
+
+    .airport-title h2{
+      margin:0;
+      font-size:42px;
+    }
+
+    /* CARDURI */
+
+    .airport-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .airport-card{
+      background:white;
+      padding:30px;
+      border-radius:18px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+      text-align:center;
+      border-top:6px solid #3498db;
+    }
+
+    .airport-card:hover{
+      transform:translateY(-6px);
+    }
+
+    .airport-card h3{
+      color:#3498db;
+      margin-bottom:15px;
+    }
+
+    .airport-card p{
+      color:#333;
+      line-height:1.7;
+    }
+
+    /* NOTA */
+
+    .airport-note{
+      margin-top:40px;
+      padding:20px;
+      text-align:center;
+      font-size:16px;
+      color:#444;
+      border-bottom:2px solid #3498db;
+      background:white;
+      border-radius:12px;
+      box-shadow:0 3px 10px rgba(0,0,0,0.05);
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#2c3e50;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:50px;
+    }
+
+    /* ANIMATIE */
+
+    @keyframes pulse{
+      0%{
+        transform:scale(1);
+      }
+
+      50%{
+        transform:scale(1.01);
+      }
+
+      100%{
+        transform:scale(1);
+      }
+    }
+
+    /* MOBILE */
+
+    @media(max-width:600px){
+
+      header h1{
+        font-size:28px;
+      }
+
+      .airport-title h2{
+        font-size:28px;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+
+  <h1>Explore Sibiu Travel</h1>
+
+  <p>
+    📞 0740 000 000 | ✉️ contact@exploresibiu.ro
+  </p>
+
+  <div class="lang-switch">
+
+    <span class="lang active">
+      <img src="https://flagcdn.com/w20/ro.png"> RO
+    </span>
+
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/gb.png"> EN
+    </span>
+
+    <span class="lang">
+      <img src="https://flagcdn.com/w20/fr.png"> FR
+    </span>
+
+  </div>
+
+</header>
+
+<nav>
+
+  <a href="index.html">Acasă</a>
+  <a href="airport.html" class="contact-btn">Airport Pick-up</a>
+  <a href="contact.html">Contact</a>
+
+</nav>
+
+<div class="container">
+
+  <!-- TITLU -->
+
+  <div class="airport-title">
+
+    <h2>✈️ Airport Pick Up</h2>
+
+  </div>
+
+  <!-- CARDURI -->
+
+  <div class="airport-grid">
+
+    <div class="airport-card">
+
+      <h3>📍 Pick up aeroport Sibiu</h3>
+
+      <p>
+        Transfer rapid și confortabil de la și către Aeroportul Sibiu.
+      </p>
+
+    </div>
+
+    <div class="airport-card">
+
+      <h3>📍 Pick up aeroport Cluj Napoca</h3>
+
+      <p>
+        Serviciu premium de transfer pentru Aeroportul Cluj Napoca.
+      </p>
+
+    </div>
+
+    <div class="airport-card">
+
+      <h3>📍 Pick up aeroport Brașov</h3>
+
+      <p>
+        Transport sigur și modern pentru Aeroportul Brașov.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- NOTA -->
+
+  <div class="airport-note">
+
+    ✨ Pick up / drop off se poate face și la alte aeroporturi la cerere.
+
+  </div>
+
+</div>
+
+<footer>
+
+  <p>
+    &copy; 2026 Explore Sibiu Travel
+  </p>
+
+</footer>
+
+</body>
+</html>
